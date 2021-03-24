@@ -81,9 +81,8 @@
 ## Содействие
 Если вы обнаружите, что что-то не так или отсутствует в этих руководствах, пожалуйста создайте отчет о [проблеме](https://github.com/Joystream/helpdesk/issues), или лучше всего, сделайте ветку для проблемного репозитория и создайте [PR](https://github.com/Joystream/helpdesk/pulls) чтобы помочь нам стать лучше!
 
-## Get Paid to Participate
-
-The Joystream Testnet Token (tJOY) is backed by a USD-denominated fiat pool, and currently redeemable via Bitcoin Cash. More information about how this works can be found below. If you want to find the current exchange rate, when the fiat pool is getting topped up, and track the status of pending exchanges, go [here](https://www.joystream.org/testnet).
+## Получение денег за участие
+Токен тестовой сети Joystream (tJOY) поддерживается фиатным пулом, номинированным в долларах США, и в настоящее время погашается через Bitcoin Cash. Более подробную информацию о том как это работает Вы можете найти ниже. Если Вы хотите найти текущий курс обмена когда фиатный пул пополняется и отслеживать статус незавершенных обменов, перейдите [сюда](https://www.joystream.org/testnet).
 
 To exchange your tokens, follow these steps.
 1. In order for us to know what address to pay, you must link your Joystream address to your Bitcoin Cash address. The easiest way to do this is in the `My Memo` tab under the `My Keys` sidebar. Ensure that the correct account is selected (the one containing the tokens you wish to redeem) in the drop-down located in the top right-hand corner of the Pioneer interface.
