@@ -1,7 +1,7 @@
 <p align="center"><img src="img/helpdesk_new.svg"></p>
 
 <div align="center">
-  <h3> Руководство по работе с нашим <a href="https://testnet.joystream.org/"> текущим тестнетом</a> используя указанные ниже ссылки<h3>
+  <h3> Руководство по работе с нашим <a href="https://testnet.joystream.org/"> текущим тестнетом</a> с которым Вы можете ознакомиться используя указанные ниже ссылки<h3>
 </div>
 
 <div align="center">
