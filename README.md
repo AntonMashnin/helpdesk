@@ -7,23 +7,23 @@
 <div align="center">
   <h4>
     <a href="/roles/validators">
-      Validators
+      Валидаторы
     </a>
     <span> | </span>
     <a href="/roles/council-members">
-      Council Members
+      Члены Совета
     </a>
     <span> | </span>
     <a href="/roles/storage-providers">
-      Storage Providers
+      Поставщики Хранилищ
     </a>
     <span> | </span>
     <a href="/roles/content-curators">
-      Content Curators
+     Кураторы Контента
     </a>
     <span> | </span>
     <a href="/roles/builders">
-      Builders
+      Сборщики
     </a>
   </h4>
 </div>
@@ -34,7 +34,7 @@
     </a>
     <span> | </span>
     <a href="/roles/content-creators">
-      Content Creators
+      Создатели Контента
     </a>
   </h5>
 </div>
