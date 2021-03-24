@@ -78,8 +78,8 @@
 # Обзор
 Данный репозиторий содержит детальное руководство для поддержки пользователей по взаимодейтсвию с нашим текущим [тестнетом](https://testnet.joystream.org/).
 
-## Contribute
-If you find something that is wrong or missing in these guides, please make an [issue](https://github.com/Joystream/helpdesk/issues), or better yet, fork the repo and make a [PR](https://github.com/Joystream/helpdesk/pulls) to help us improve!
+## Содействие
+Если вы обнаружите, что что-то не так или отсутствует в этих руководствах, пожалуйста создайте отчет о [проблеме](https://github.com/Joystream/helpdesk/issues), или лучше всего, сделайте ветку для проблемного репозитория и создайте [PR](https://github.com/Joystream/helpdesk/pulls) чтобы помочь нам стать лучше!
 
 ## Get Paid to Participate
 
