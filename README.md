@@ -84,8 +84,8 @@
 ## Получение денег за участие
 Токен тестовой сети Joystream (tJOY) поддерживается фиатным пулом, номинированным в долларах США, и в настоящее время погашается через Bitcoin Cash. Более подробную информацию о том как это работает Вы можете найти ниже. Если Вы хотите найти текущий курс обмена когда фиатный пул пополняется и отслеживать статус незавершенных обменов, перейдите [сюда](https://www.joystream.org/testnet).
 
-To exchange your tokens, follow these steps.
-1. In order for us to know what address to pay, you must link your Joystream address to your Bitcoin Cash address. The easiest way to do this is in the `My Memo` tab under the `My Keys` sidebar. Ensure that the correct account is selected (the one containing the tokens you wish to redeem) in the drop-down located in the top right-hand corner of the Pioneer interface.
+Для обмена Ваших монет, следуйте этим шагам.
+1. Чтобы мы знали, адрес для оплаты, Вы должны связать свой адрес Joystream с адресом Bitcoin Cash. Самый простой способ сделать это открыть на боковой панели вкладку `My Memo` в разделе `My Keys`. Убедитесь, что в раскрывающемся списке, в правом верхнем углу интерфейса Pioneer выбрана правильная учетная запись (именно та учётная запись которая содержит токены, которые Вы хотите обменять)
 
 ```
 # Only the part in the line below goes in the memo:
