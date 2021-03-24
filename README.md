@@ -40,13 +40,13 @@
 </div>
 </br>
 
-Table of Contents
+Оглавление
 ---
 
 <!-- TOC START min:1 max:3 link:true asterisk:false update:true -->
-- [Overview](#overview)
-  - [Contribute](#contribute)
-  - [Get Paid to Participate](#get-paid-to-participate)
+- [Обзор](#overview)
+  - [Вклад](#contribute)
+  - [Получение денег за участие](#get-paid-to-participate)
 - [Get Started](#get-started)
   - [Generate Keys](#generate-keys)
   - [Get a Membership](#get-a-membership)
