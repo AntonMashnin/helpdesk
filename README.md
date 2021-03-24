@@ -88,17 +88,17 @@
 1. Чтобы мы знали, адрес для оплаты, Вы должны связать свой адрес Joystream с адресом Bitcoin Cash. Самый простой способ сделать это открыть на боковой панели вкладку `My Memo` в разделе `My Keys`. Убедитесь, что в раскрывающемся списке, в правом верхнем углу интерфейса Pioneer выбрана правильная учетная запись (именно та учётная запись которая содержит токены, которые Вы хотите обменять)
 
 ```
-# Only the part in the line below goes in the memo:
+# Ниже в заметке помещается только часть строки:
 1OR3ORqORzYOURBBITCOINCASHADDRESS
 ```
 
-2. Send your testnet tokens (tJOY) to the following address:
+2. Отправьте Вашие тестнет монеты (tJOY) на следующий адрес:
 
 ```
 5D5PhZQNJzcJXVBxwJxZcsutjKPqUPydrvpu6HeiBfMaeKQu
 ```
 
-Once the tokens have been received to this address, the time, date, your address, your memo and the current tJOY/USD exchange rate are logged. Your tokens are then burned (reducing the tJOY issuance), and the USD amount is deducted from the fiat pool. This means that the exchange rate is not affected. Your Bitcoin Cash should arrive within 72 hours, as we are batching the transactions. Also note that the BCH/USD exchange rate is at the time of the Bitcoin Cash transfer.
+Как только монеты будут зачислены на этот адрес, сразу после этого, время, дата, Ваш адрес, ваши заметки и текущий курс обмена tJOY/USD будут записаны в журнал. Затем ваши токены сжигаются (уменьшая выпуск tJOY), и сумма в долларах вычитается из фиатного пула. Это означает, что на обменный курс это не повлияет. Ваш Bitcoin Cash должен быть доставлен в течение 72 часов, поскольку мы группируем транзакции. Также обратите внимание, что учитывается обменный курс BCH/USD на момент перевода Bitcoin Cash.
 
 # Get Started
 To get started and participate on the Joystream testnets, you must first generate `Key(s)`, and sign up for a `Membership`. This requires no software or downloads, and can be done in your browser on Pioneer [here](https://testnet.joystream.org).
