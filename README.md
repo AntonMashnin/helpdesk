@@ -44,8 +44,8 @@
 ---
 
 <!-- TOC START min:1 max:3 link:true asterisk:false update:true -->
-- [Обзор](#overview)
-  - [Вклад](#contribute)
+- [Обзор](#Обзор)
+  - [Вклад](#Вклад)
   - [Получение денег за участие](#get-paid-to-participate)
 - [Начало](#get-started)
   - [Генерация ключей](#generate-keys)
