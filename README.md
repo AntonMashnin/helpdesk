@@ -101,10 +101,10 @@
 Как только монеты будут зачислены на этот адрес, сразу после этого, время, дата, Ваш адрес, Ваши заметки и текущий курс обмена tJOY/USD будут записаны в журнал. Затем Ваши токены сжигаются (уменьшая выпуск tJOY), и сумма в долларах вычитается из фиатного пула. Это означает, что на обменный курс это не повлияет. Ваш Bitcoin Cash должен быть доставлен в течение 72 часов, поскольку мы выполняем групировку транзакции. Также обратите внимание, что учитывается обменный курс BCH/USD на момент перевода Bitcoin Cash.
 
 # Начнём
-To get started and participate on the Joystream testnets, you must first generate `Key(s)`, and sign up for a `Membership`. This requires no software or downloads, and can be done in your browser on Pioneer [here](https://testnet.joystream.org).
+Чтобы начать работу и участвовать в тестовых сетях Joystream, вы должны сначала сгенерировать `Ключи`, и зарегистрироваться для получения `Членства`. Для этого не требуется никакого программного обеспечения или загрузка, так что Вы можете сделать это в вашем браузере в Pioneer [здесь](https://testnet.joystream.org).
 
-## Generate Keys
-Click `My Keys` in the sidebar, and then click the `Add account` button. The choices you make from here depend to a certain degree on how you intend to participate. If you just want to play around, you can follow the recommended defaults. If you have a specific role in mind, you may instead want to follow the links to the instructions in the [header of this document](#guides-to-get-started-on-our-current-testnet-in-links-below), or compare them in more detail [here](#active-roles).
+## Генерация ключей
+Нажмите `Mои Ключи` на боковой панели, затем нажмите кнопку `Добавить аккаунт`. Выбор, который Вы сделаете здесь, в определенной степени зависит от того, как Вы собираетесь участвовать. Если Вы просто хотите "поиграться", Вы можете следовать рекомендуемым настройкам по умолчанию. Если у Вас есть конкретная роль, тогда Вы можете перейти по ссылке на инструкции в [заголовок документа](#заголовок-документа), или сравнить их более детальней [здесь](#active-roles).
 
 In any event, the `Keys` will be automatically stored in your browser storage for your convenience, but even so it's safest to save your `Raw seed` (you need it for certain roles) and save the .json file associated with the key. The `Mnemonic` can also be used to restore your `Keys`, but keeping the .json file somewhere safe is recommended, as it is the preferred format used to import your key in to certain tools, such as the [CLI](/tools/cli).
 
