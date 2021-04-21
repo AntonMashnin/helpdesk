@@ -108,30 +108,29 @@
 
 В любом случае `Ключи` будут автоматически сохраняться в хранилище Вашего браузера для вашего удобства, но даже в этом случае безопаснее всего сохранить `seed фразу` (она Вам нужна для определенных ролей) и сохранить файл .json, который связанный с ключом. `Мнемоник` также может быть использован для восстановления ваших `ключей`,но рекомендуется хранить файл .json в безопасном месте, поскольку это предпочтительный формат, используемый для импорта Вашего ключа в определенные инструменты, такие как [CLI](/tools/cli).
 
-## Get a Membership
-To become a `Member` of the platform, you will need some tokens. The `faucet` is closed at the moment due to abuse from Sybil attackers though we are working on a frictional faucet which we hope to release soon. Currently, the only way to get tokens is to join our [Discord server](https://discord.gg/DE9UN3YpRP) and ask for some there. This group is also a great place to get support and discuss Joystream with other community members.
+## Получение членства
+Стать `участником` платформы, Вам понадобятся токены. `Кран` в настоящий момент закрыт из-за "Sybil" атак хотя мы работаем над фрикционным краном, который надеемся выпустить в ближайшее время. В настоящее время единственный способ получить токены - это присоединиться к нашему [Discord server](https://discord.gg/DE9UN3YpRP) и получить их там. Эта группа также является отличным местом, чтобы получить поддержку и обсудить Joystream с другими членами сообщества.
 
-**Note:**
-There are currently no fees associated with most transactions, but some parts of Pioneer will still require you to maintain a balance of at least 1 tJOY to allow you to perform certain actions.
+**Примечание:**
+В настоящее время комиссия отсутствует для большинства транзакций, однако частично Pioneer по-прежнему будет требовать от Вас положительный баланс, не менее 1-го tJOY, чтобы Вы могли выполнять определенные действия.
 
-Now, click `Membership` in the sidebar, and select the `Register` tab. Choose a `Handle/nickname`. Optionally, provide a link to an image file for your avatar, and fill in the markdown-enabled `About` field.
+Нажмите `Членство` на боковой панели, и выберите вкладку `Регистрация`. Выберите `Обработка/Псевдоним`. При желании укажите ссылку на файл изображения для вашего аватара, и заполните поле `About`.
 
+# Поощрения
+Тестовые сети Joystream стимулируются, это означает, что пользователи могут зарабатывать реальные деньги за участие. Мы выбрали такую систему по многим причинам, но одним из основных факторов является создание сообщества, которое понимает работу сети. После того, как платформа будет запущена в основной сети, Jsgenesis не будет управлять критически важной инфраструктурой, занимать роли, необходимые для работы платформы, или стимулировать инновации.
 
-# Incentives
-The Joystream testnets are incentivized, meaning users can earn real money for participating. There are many reasons we have chosen a system like this, but one of the main motivations is to build a community that understands the network. After the platform goes live on mainnet, Jsgenesis will not be around to run critical infrastructure, occupy the roles needed for the platform to work, or drive innovation.
+В предыдущих сетях выплачивались еженедельные выплаты для всех ролей, причем размер вознаграждений и доступных позиций определялся Jsgenesis. Старая схема стимулирования работала следующим образом, она привлекла небольшую группу пользователей к участию и зарабатыванию Bitcoin Cash за выполненый вклад в развитие. В данном случае тестнет токены (tJOYs) использовались для достижения нужного результата. Пользователям нужна была всего лишь небольшая сумма для стейкинга ролей, и получения вознаграждения в виде Bitcoin Cash, без учёта tJOY в качестве ценного актива.
 
-Previous testnets had weekly payouts for all roles, with the magnitude of rewards and positions available decided by Jsgenesis. The old incentive scheme has worked in the sense that it has gotten a small group of users to participate and earn Bitcoin Cash for their contributions. However, the testnet tokens (tJOYs) have only been a means to an end. Users only needed a small amount to stake for roles, and get the recurring Bitcoin Cash reward, without having to consider tJOY as a valuable asset in its own right.
+Когда Joystream запустит майнет, где никто не заплатит Bitcoin Cash вознаграждения, поэтому платформа будет использовать только токены JOY как на единицу ценности для поддержания критически важной инфраструктуры для продолжение развития, управления, а также для стимулирования создателей контента. Для того чтобы получить структуру которая наилучшим образом отражает стимулы основной сети, мы решили, что выпуск токенов tJOY будет поддерживаться фиатным пулом, где пользователи могут конвертировать свои токены, чтобы покрыть свои реальные затраты, время и оборудование. Основы новой схемы изложены ниже:  
 
-When Joystream goes live on mainnet, there will be no one there to pay these (Bitcoin Cash) rewards, and the platform must rely on JOY tokens as the single value carrier for maintaining critical infrastructure, continued development, governance, and to provide incentives for content creators. In order to get a structure that reflects the mainnet incentives in a better way, we have decided to have the tJOY token issuance be backed by a fiat pool, where users can convert their tokens to cover their real costs, time and hardware. The basics of the new scheme is outlined below:
+-   При запуске новой сети выдача токенов будет перенесена из предыдущей сети, а существующий фиатный пул будет «перенесен» в новую сеть.
+-   На каждый период консульства (на текущий момент 2 недели), сумма в долларах США будет добавлена в фиатный пул в качестве периодического пополнения, таким образом это увеличивает ценность каждого токена, если предположить, что выпуск остается постоянным.
+-   Однако, все роли на платформе будут компенсированы новыми токенами tJOY, эффективно увеличивая предложение.
+-   Помимо периодического пополнения, набор ключевых показателей эффективности Совета также настраивается нами, чтобы сеть работала должным образом.
+-   Если KPI будет достигнут, пул фиатных денег будет увеличиваться на сумму, рассчитанную на основе успеха уровня для каждого KPI, новые tJOY токены будут майнится пропорционально, и они будут переданы `Членам Совета` и избирателям, которые их избрали. Как следствие, это не повлияет на стоимость держателей токенов, не участвующих в управлении.
+-   Другие способы увеличения предложения tJOY и фиатного пула включают в себя вознаграждения, конкурсы, предложения по расходам и т.д.
 
--   At launch of a new network, the token issuance will be migrated from the previous network, and the existing fiat pool will be "transferred" to the new network.
--   For each Council Term (currently 2 weeks), an amount of USD will be added to fiat pool as recurring replenishment, thus increasing the value of each token, if one were to assume the issuance stays constant.
--   However, all roles on the platform will be compensated by newly minted tJOY tokens, effectively inflating the supply.
--   In addition to the recurring replenishment, a set of Council KPIs (Key Performance Indicators), will be set by us, to ensure the network is working as intended.
--   If a KPI is reached, the fiat pool will increase by the amount computed based on the level success for each KPI, new tJOY will be minted proportionally, and these will be distributed to both the `Council Members` and the voters that elected them. As a consequence, this will not affect the value of token holders not participating in the governance.
--   Other ways that the tJOY supply and the fiat pool can increase include through bounties, competitions, spending proposals, etc.
-
-An overview on how the new incentive scheme works, and how it interacts with the new proposal model that gives far more power and responsibility to users via the council, can be found [here](/tokenomics).
+Можно найти обзор того, как работает новая схема стимулирования и как она взаимодействует с новой моделью предложения, которая дает пользователям гораздо больше полномочий и ответственности через совет [здесь](/tokenomics).
 
 # Founding Member Program
 
