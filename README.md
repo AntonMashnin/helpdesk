@@ -132,33 +132,33 @@
 
 Можно найти обзор того, как работает новая схема стимулирования и как она взаимодействует с новой моделью предложения, которая дает пользователям гораздо больше полномочий и ответственности через совет [здесь](/tokenomics).
 
-# Founding Member Program
+# Программа для учредителей
 
-Alongside the testnet incentive structure associated with earning tJOY (redeemable for BCH) from participation, we are also rewarding high-quality project contributors with allocations of mainnet JOY tokens through our new Founding Member Program.
+Наряду со структурой стимулирования тестовой сети, связанной с зарабатыванием tJOY (где их можно обменять на BCH) от участия, мы также выполняем вознаграждение высококвалифицированных участников проекта выделением токенов JOY для основной сети в рамках нашей новой программы для учредителей.
 
-We have launched this program to ensure that a sufficiently large, effective and motivated community of users is ready to occupy all the different roles required to run, evolve and grow the platform on mainnet.
+Мы запустили эту программу, чтобы обеспечить достаточно большое, эффективное и мотивированное сообщество пользователей готовых выполнять разные роли, необходимые для запуска, развивития и расширения платформы в основной сети.
 
-You can read more about the program in the [dedicated GitHub repo](https://github.com/joystream/founding-members), or on our [website](https://www.joystream.org/founding-members/).
+Вы можете узнать больше о программе в [dedicated GitHub repo](https://github.com/joystream/founding-members), или на нашем [website](https://www.joystream.org/founding-members/).
 
-# Active Roles
+# Активные роли
 
-The list below shows the currently active roles available at our current [testnet](https://testnet.joystream.org/). In order to know how to best allocate your tokens, you can experiment with the [tokenomics spreadsheet](https://docs.google.com/spreadsheets/d/13Bf7VQ7-W4CEdTQ5LQQWWC7ef3qDU4qRKbnsYtgibGU/edit?usp=sharing).
+В приведенном ниже списке показаны текущие активные роли, доступные в нашем текущем [testnet](https://testnet.joystream.org/). Чтобы узнать, как лучше всего распределить свои токены, вы можете поэкспериментировать с [tokenomics spreadsheet](https://docs.google.com/spreadsheets/d/13Bf7VQ7-W4CEdTQ5LQQWWC7ef3qDU4qRKbnsYtgibGU/edit?usp=sharing).
 
-## Validators
+## Валидаторы
 
 <p align="center"><img src="img/validators.svg" width="500"></p>
 
-### Description
-In proof of stake systems, block producers, or `Validators`, are typically paid a fixed amount for each block produced. `Validators` must run a full node.
+### Описание
+В proof of stake системе, создатели блоков, или `Валидаторы`, обычно платят фиксированную сумму за каждый произведенный блок. `Валидаторы` должны запустить полноценную ноду.
 
-A detailed guide to setting up the `Validator` node and settings can be found [here](/roles/validators).
+Подробное руководство по установки ноды для `Валидации` и настройки Вы можете найти [здесь](/roles/validators).
 
-### Incentives
+### Поощрения
 
-Active `Validators` are rewarded in tJOY every new `era` (600 blocks). The size of the reward for each `Validator` depends on a couple of variables:
+Активные `Валидаторы` награждаются tJOY каждую новую `эру` (600 блоков). Размер вознаграждения для каждого `Валидатора` зависит от следующих показателей:
 
-- The number of `Validators`
-  - The total amount awarded is independent of the number of active `Validators`. This means that the individual tJOY reward is the total reward divided by the number of `Validators` in the last `era`.
+- Количество `Валидаторов`
+  - Общая сумма вознаграждения не зависит от количества активных `Валидаторов`. Это означает, что индивидуальное вознаграждение tJOY равняется общей сумме награды, деленной на количество `Валидаторов` в последней `эре`.
 - The total supply of tJOY
   - The rewards for `Validators` are calculated as a percentage of the total tJOY issuance.
 - The ratio of tokens at stake for the `Validator` set compared to the total token issuance on the network
