@@ -159,8 +159,8 @@
 
 - Количество `Валидаторов`
   - Общая сумма вознаграждения не зависит от количества активных `Валидаторов`. Это означает, что индивидуальное вознаграждение tJOY равняется общей сумме награды, деленной на количество `Валидаторов` в последней `эре`.
-- The total supply of tJOY
-  - The rewards for `Validators` are calculated as a percentage of the total tJOY issuance.
+- Общий запас tJOY
+  - Награды для `Валидаторов` рассчитываются как процент от общего выпуска tJOY.
 - The ratio of tokens at stake for the `Validator` set compared to the total token issuance on the network
   - By summing up the stake of the individual `Validators` and their `Nominators`, you get the total amount at stake.
   - Divide by the tJOY issuance and you get the ratio.
