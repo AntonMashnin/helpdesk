@@ -161,14 +161,14 @@
   - Общая сумма вознаграждения не зависит от количества активных `Валидаторов`. Это означает, что индивидуальное вознаграждение tJOY равняется общей сумме награды, деленной на количество `Валидаторов` в последней `эре`.
 - Общий запас tJOY
   - Награды для `Валидаторов` рассчитываются как процент от общего выпуска tJOY.
-- The ratio of tokens at stake for the `Validator` set compared to the total token issuance on the network
-  - By summing up the stake of the individual `Validators` and their `Nominators`, you get the total amount at stake.
-  - Divide by the tJOY issuance and you get the ratio.
-  - The ideal number (for the `Validators`) is 25%.
-  - If this number is higher or lower, than 25%, the rewards "drop off"
+- Cотношение количества токенов в стейкинге для выбора `Валидатора` по сравнению с общим количеством выпущенных токенов в сети
+  - Суммируя ставки отдельных `Валидаторов` и их `Номинаторов`, Вы получаете общую сумму ставки.
+  - Разделите на выпуск tJOY, и Вы получите соотношение.
+  - Идеальное число (для `Валидаторов`) - 25%.
+  - Если это число больше или меньше 25%, награды "падают".
 
-The rewards for the last `era` will show up as an event, and can be seen in the [explorer](https://testnet.joystream.org/#/explorer), if you keep a window open. Fairly precise estimates can be found on the [Tokenomics page](https://testnet.joystream.org/#/tokenomics) in Pioneer, or (in most cases) by looking at the "last reward" in [here](https://testnet.joystream.org/#/staking/targets).
-If you want to exchange your tokens, you need to unbond them first. Check the guide for instructions on how to do this.
+Награды за последнюю `эру` будут отображаться как событие, и их можно будет увидеть в [проводнике](https://testnet.joystream.org/#/explorer), если оставить окно открытым. Максимально точные оценки можно найти на [странице Токеномика](https://testnet.joystream.org/#/tokenomics) в Pioneer, или (в большинстве случаев) просмотрев "последнюю награду"  [здесь](https://testnet.joystream.org/#/staking/targets).
+Если Вы хотите обменять свои токены, Вам нужно сначала отменить их привязку. Обратитесь к руководству, чтобы узнать, как это сделать.
 
 A change to note introduced in the Alexandria testnet is the fact that payouts to validators are no longer paid automatically.
 However, you have two weeks to claim your rewards, so, for example, if you forget for 15 days, you'll only "lose" a day of earnings.
