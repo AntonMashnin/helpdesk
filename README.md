@@ -170,48 +170,48 @@
 Награды за последнюю `эру` будут отображаться как событие, и их можно будет увидеть в [проводнике](https://testnet.joystream.org/#/explorer), если оставить окно открытым. Максимально точные оценки можно найти на [странице Токеномика](https://testnet.joystream.org/#/tokenomics) в Pioneer, или (в большинстве случаев) просмотрев "последнюю награду"  [здесь](https://testnet.joystream.org/#/staking/targets).
 Если Вы хотите обменять свои токены, Вам нужно сначала отменить их привязку. Обратитесь к руководству, чтобы узнать, как это сделать.
 
-A change to note introduced in the Alexandria testnet is the fact that payouts to validators are no longer paid automatically.
-However, you have two weeks to claim your rewards, so, for example, if you forget for 15 days, you'll only "lose" a day of earnings.
-(Also, anyone can claim for anyone, so a nominator will not suffer if the associated validator forgets)
+Важное изменение, внесенное в тестовую сеть Александрии, заключается в том, что выплаты валидаторам больше не выплачиваются автоматически.
+Однако у Вас есть две недели, чтобы запросить вознаграждение, поэтому, например, если Вы забудете об этом на 15 дней, Вы "потеряете" только один день своего заработка.
+(Кроме того, любой может потребовать вознаграждение от кого угодно, поэтому номинатор не пострадает, если валидатор в которого он наминирует забудет об получении вознаграждения)
 
-## Council Members
+## Члены Совета
 
 <p align="center"><img src="img/councilmembers.svg" width="500"></p>
 
-### Description
+### Описание
 
-`Council Members` are elected by the stakeholders in the system to act in the long-term interest of the platform. The `Council` is responsible for allocating resources, and hiring executive personnel to run the platform's day-to-day operations.
+`Члены Совета` избираются заинтересованными сторонами в системе, чтобы действовать в долгосрочных интересах платформы. `Совет` отвечает за распределение ресурсов и найм руководящего персонала для выполнения повседневных операций платформы.
 
-An overview of the proposal system can be found [here](/proposals).
-A detailed explanation of the election cycle and responsibilities can be found [here](/roles/council-members).
+Обзор системы предложений можно найти [here](/proposals).
+Подробное объяснение избирательного цикла и обязанностей можно найти [here](/roles/council-members).
 
-### Incentives
+### Поощрения
 
-`Council Members` receive recurring rewards in tJOY. Unlike the other recurring rewards for roles, this is not something the `Council` can vote on, as it could lead to some unfortunate outcomes. The size of the reward can be found can be found in the chain state.
+`Члены совета` получат переодические награды в tJOY. В отличие от других повторяющихся наград за роли, "Совет" не может голосовать по этому вопросу, так как это может привести к плохим последствиям. Размер награды можно узнать в цепочке состояний.
 
-Council Members also receive [Council KPI rewards](/tokenomics/README.md#council-kpis) on top of the recurring rewards.
+Члены Совета также получают [Награды Совета KPI](/tokenomics/README.md#council-kpis) помимо повторяющихся наград.
 
-## Storage Providers
+## Поставщики хранилищ
 
 <p align="center"><img src="img/storageproviders.svg" width="500"></p>
 
-### Description
+### Описание
 
-You can't have a video platform without videos, so someone has to take the role of storing the data. In the future, this will be a highly specialized role, focusing on what is implied by the name of the role. Currently, it will in practice also entail the future `Bandwidth Provider` role.
+У Вас не может быть видеоплатформы без видео, поэтому кто-то должен взять на себя роль хранения данных. В будущем это будет узкоспециализированная роль. В настоящее время на практике это также повлечет за собой будущую роль `поставщика пропускной способности`.
 
-Unlike `Validators` that can come and go without too much friction (at least for now), a new `Storage Provider` will currently need to replicate the entire content directory. As a consequence, the platform needs some stability for this role to avoid providing a poor user experience, or worse, loss of data.
+В отличие от `Валидаторов`, которые могут приходить и уходить без особых проблем (по крайней мере, на данный момент), новый `Поставщик хранилища` в настоящее время должен будет реплицировать весь каталог данных. Как следствие, платформе требуется стабильность для данной роли, чтобы избежать неудовлетворительного взаимодействия с пользователем или, что еще хуже, потери данных.
 
-After an upgrade of the `Constantinople` network, the `Storage Provider` role will now be within its own working group, with a lead overseeing the day-to-day operations, while being accountable to the Council.
+После обновления сети `Константинополь` роль `Поставщик хранилища` теперь будет находиться в рамках его собственной рабочей группы, где руководитель будет контролировать повседневные операции, но при этом будет подотчетен Совету.
 
-A detailed guide on being a Storage Provider and the associated responsibilities can be found [here](/roles/storage-providers).
+Подробное руководство о том, как стать поставщиком хранилища, и связанными с ним обязанностями можно найти [here](/roles/storage-providers).
 
-### Incentives
+### Поощрения
 
-The `Storage Lead` can only be hired (or fired) by the Council through the proposal system. The Lead should maintain sufficient storage and distribution capacity by employing `Storage Providers`, and paying them sufficiently. The Lead will also need to run a storage node themselves. Another important task is to keep an eye on the working group's financing (deciding how much each `Storage Provider` should be paid etc.).
+`Руководитель отдела хранения` может быть нанят (или уволен) Советом только через систему предложений. Ведущий должен поддерживать достаточные объемы хранения и распределения, нанимая `Провайдеров хранения` и оплачивать их услуги в достаточной степени. Ведущему также потребуется запустить узел хранения самостоятельно. Еще одна важная задача - следить за финансированием рабочей группы (принятие решения о том, сколько должен будет получить каждый `Поставщик хранилища` и т. д..).
 
-The current status of this role can be found [here](https://testnet.joystream.org/#/working-groups).
+Текущий статус этой роли можно найти [здесь](https://testnet.joystream.org/#/working-groups).
 
-## Content Curators
+## Кураторы контента
 
 <p align="center"><img src="img/contentcurators.svg" width="500"></p>
 
