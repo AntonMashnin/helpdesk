@@ -215,15 +215,15 @@
 
 <p align="center"><img src="img/contentcurators.svg" width="500"></p>
 
-### Description
+### Описание
 
-`Content Curators` will one day be essential for ensuring that the petabytes of media items uploaded to Joystream are formatted correctly and comprehensively monitored and moderated. Our upcoming testnet allows this content monitoring to take place by giving users who are selected for the role administrative access to the Joystream content directory to make changes where necessary.
+`Кураторы контента` когда-нибудь станет важным для того, чтобы петабайты мультимедийных элементов, загруженных в Joystream, были правильно отформатированы и всесторонне отслеживались и модерировались. Наша будущая тестовая сеть позволяет осуществлять этот мониторинг контента, предоставляя пользователям, выбранным для роли администратора, доступ к каталогу контента Joystream для внесения необходимых изменений.
 
-A detailed guide on being a Content Curator and the associated responsibilities can be found [here](/roles/content-curators).
+Подробное руководство о том, как стать куратором контента и связанными с ним обязанностями, можно найти [here](/roles/content-curators).
 
-### Incentives
+### Поощрения
 
-`Content Curators` are hired by the `Curator Lead`. The `Council` is responsible for setting the budget for the `Curators` by providing the lead with a so called mint. The lead can hire and fire as they choose, but if the capacity of the mint runs out, the rewards will stop flowing. This means that both the `Council` and the lead must pay attention to the mint capacity.
+`Кураторы Контента` нанимаются `Ведущим Куратором`. The `Council` is responsible for setting the budget for the `Curators` by providing the lead with a so called mint. The lead can hire and fire as they choose, but if the capacity of the mint runs out, the rewards will stop flowing. This means that both the `Council` and the lead must pay attention to the mint capacity.
 
 The group and its lead is governed through the proposal system, where any member can propose to "Set Content Working Group Mint Capacity", and "Set (Curator) Lead".
 
