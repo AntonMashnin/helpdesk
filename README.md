@@ -223,47 +223,47 @@
 
 ### Поощрения
 
-`Кураторы Контента` нанимаются `Ведущим Куратором`. The `Council` is responsible for setting the budget for the `Curators` by providing the lead with a so called mint. The lead can hire and fire as they choose, but if the capacity of the mint runs out, the rewards will stop flowing. This means that both the `Council` and the lead must pay attention to the mint capacity.
+`Кураторы Контента` нанимаются `Ведущим Куратором`. `Совет` отвечает за принятие бюджета для `Кураторов`, предоставляя им так называемый "монетный двор" или бюджет. Руководитель может нанимать и увольнять кураторов по своему усмотрению, но если запасы бюджета иссякнут, вознаграждения перестанут поступать. Это означает, что и `Совет`, и руководитель должны обратить внимание на свой бюджет.
 
-The group and its lead is governed through the proposal system, where any member can propose to "Set Content Working Group Mint Capacity", and "Set (Curator) Lead".
+Управление группой и ее лидером осуществляется через систему предложений, где любой участник может вынести на "Утверждение размер бюджета Рабочей группы" и "Выбрать (куратора) руководителя"
 
-The former, if executed, will simply set the capacity of the mint to the number proposed, regardless of previous capacity. To avoid workers "striking" due to the lack of payments (including for themselves), the lead must ensure the mint does not run out of capacity. If the lead goes rogue, or simply spends too much, the capacity can be set to zero to avoid further spending.
+Первый вариант, если он будет принят, просто утвердит размер бюджета в рамках предложенного размера, независимо от предыдущей количества.Чтобы избежать "забастовок" участников из-за отсутствия выплат (в том числе и для себя), руководитель должен следить за тем, чтобы бюджет не был исчерпан. Если руководитель выходит за рамки или просто тратит слишком много, объем затрат можно установить в ноль, чтобы избежать дальнейших расходов.
 
-When making a new "Set (Curator) Lead" proposal, one can propose to
-- replace the old lead
-- hire a lead if there are currently none
-- fire the current lead, without setting a new one.
+При создании нового предложения "Выбора (куратора) руководителя" можно предложить
+- заменить старого руководителя
+- нанять рукводителя, если в настоящее время его нет
+- уволить текущего лидера, без выбора нового.
 
 
-## Builders
+## Строители
 
 <p align="center""><img src="img/bugreporters.svg" width="500"></p>
 
 ### Description
-Unlike the other roles, `Builders` are not a formal role, with automatic on-chain rewards. Instead, Jsgenesis will create "Bounties", with specified tasks, conditions and rewards.
+В отличие от других ролей, `Строители` не являются формальной ролью с автоматическими наградами в цепочке. Вместо этого Jsgenesis создаст `Баунти` с указанными задачами, условиями и наградами.
 
-The tasks associated with these Bounties will ideally try to solve some problem either for the community or Jsgenesis, but in some cases, their main purpose will be to create some fun and/or attract new members to the community. In some cases, Bounties may be created as a result of requests from the Council or the community.
+Задачи, связанные с этими Баунти, в идеале будут пытаться решить какую-то проблему либо для сообщества, либо для Jsgenesis, но в некоторых случаях их основная цель будет состоять в том, чтобы развлечь и/или привлечь новых участников в сообщество. В некоторых случаях награды могут быть созданы в результате запросов `Совета` или сообщества.
 
-Over time, the tasks should allow people with different skillsets and interests to participate. Most challenges will be easier if you are somewhat technical or creative, but in other situations it will simply require putting in some time and effort. To learn more about Bounties, go to the `Builders` section [here](/roles/builders).
+Со временем задачи должны позволить людям с разными навыками и интересами принимать участие. Большинство задач будет проще выполнять, если Вы будете немного обладать техническими знаниями или будете креативны, но в других ситуациях это просто потребует некоторого времени и усилий. Чтобы узнать больше о Bounties, перейдите в раздел `Строители`[здесь](/roles/builders).
 
-### Incentives
+### Поощрения
 
-The incentives will be to claim all, or parts, of the reward associated with the Bounty.
+Поощрение будет заключаться в том, чтобы потребовать всю или часть награды, связанной с Баунти.
 
-# Other Features and Tools
+# Другие Функции и Инструменты
 
-This section covers other things you can do after [getting started](#get-started), that aren't paid roles at the moment.
+В этом разделе рассказывается о других возможностях, которые Вы можете сделать после [начать](#get-started), которые на данный момент не оплачиваются.
 
-## Content Creators
+## Создатели контента
 
 <p align="center"><img src="img/contentcreators.svg" width="500"></p>
 
-### Description
+### Описание
 
-When the Joystream mainnet is live, `Content Creators` will be responsible for creating and uploading the enormous variety of different content types and genres which we believe will allow Joystream to grow into a successful decentralized media platform.
+Когда основная сеть Joystream запущена, `Создатели контента` будут отвечать за создание и загрузку огромного количества различных типов и жанров контента, которые, как мы считаем, позволят Joystream вырасти в успешную децентрализованную медиа-платформу.
 
 ## CLI
-The CLI tool is under development, but is already needed for the [Storage Lead](/roles/storage-lead), [Curators and Lead](/roles/content-curators), [Content Creators](/roles/content-curators), and can be useful for [Storage Providers](/roles/storage-providers). Go [here](/tools/cli) for more information and guides.
+Инструмент CLI находится в стадии разработки, но уже необходим для [Руководителей Хранилища](/roles/storage-lead), [Кураторов и Лидеров](/roles/content-curators), [Создателей контента](/roles/content-curators), and can be useful for [Storage Providers](/roles/storage-providers). Go [here](/tools/cli) for more information and guides.
 
 ## On-Chain Forum
 
