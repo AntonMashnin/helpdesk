@@ -1,8 +1,8 @@
 <p align="center"><img src="img/validator_new.svg"></p>
 
 <div align="center">
-  <h4>This is a step-by-step guide for setting up your <a href="https://github.com/Joystream/substrate-node-joystream">full node</a>, and getting started as a Validator on the latest
-  <a href="https://testnet.joystream.org/">Joystream Testnet</a>.<h4>
+  <h4>Это пошаговое руководство по настройке Вашей <a href="https://github.com/Joystream/substrate-node-joystream">полноценной ноды</a>, и приступить к работе в качестве Валидатора в последнем
+  <a href="https://testnet.joystream.org/"> Тестнете Joystream</a>.<h4>
 </div>
 
 
