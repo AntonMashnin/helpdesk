@@ -23,7 +23,7 @@
     </a>
     <span> | </span>
     <a href="/roles/builders">
-      Сборщики
+      Строители
     </a>
   </h4>
 </div>
