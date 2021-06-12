@@ -265,6 +265,6 @@
 ## CLI
 Инструмент CLI находится в стадии разработки, но уже необходим для [Руководителей Хранилища](/roles/storage-lead), [Кураторов и Лидеров](/roles/content-curators), [Создателей контента](/roles/content-curators), and can be useful for [Storage Providers](/roles/storage-providers). Go [here](/tools/cli) for more information and guides.
 
-## On-Chain Forum
+## Сетевой форум
 
-This is the first step in providing users, infrastructure role participants, `Council Members` and future stakeholders a way to communicate and coordinate. Hopefully, this method of interaction will further help in developing a strong community around Joystream. Note that you have to be a `member` to post, and only the forum moderator (forum sudo) can create categories.
+Это первый шаг в предоставлении пользователям, участникам роли инфраструктуры, `Членам Совета` и будущим заинтересованным сторонам способ общения и координации. Надеюсь, этот метод взаимодействия в дальнейшем поможет в развитии сильного сообщества вокруг Joystream. Обратите внимание, что Вы должны быть `участником`, чтобы отправлять сообщения, и только модератор форума (forum sudo) может создавать категории.
