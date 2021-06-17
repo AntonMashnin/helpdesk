@@ -262,17 +262,17 @@ curl: (7) Failed to connect to localhost port 9933: Connection refused
 {"jsonrpc":"2.0","error":{"code":-32601,"message":"Method not found"},"id":1}
 ```
 
-2. Back in [Pioneer](testnet.joystream.org/), click `Validators` in the sidebar, and then the `Account actions` tab.
-3. Click the `+ Stash` button, and select the keys from the first two dropdowns.
-4. In the third field, enter the amount you want to stake (the maximum amount is the tokens in the account -1).
-5. In the bottom dropdown, select the payment destination. Your selection here depends on your [preferences](#bonding-preferences).
-6. If the transaction goes through, you should now see a `Set Session Key` button next to your "stash" and "controller" keys in this window. Click it, paste in your `0xa0very0long0hex0string` in the field, and confirm.
-7. If the transaction goes through, you should now see a `Validate` button instead. Click it, and set your `reward commission percentage`, a number between 0 and 100. Your input here depends on your preferences. A "high" number means you are less likely to get [Nominators](#nominating).
+2. Вернитесь в [Pioneer](testnet.joystream.org/), нажмите на иконку `Validators` на боковой панели, а затем вкладку `Действия с аккаунтом`.
+3. Нажмите кнопку `+ Stash`, и выберите ключи из первых двух раскрывающихся списков.
+4. В третьем поле введите сумму, которую Вы хотите застейкать (это должна быть максимальная сумма монет на счету -1 монета).
+5. В нижнем раскрывающемся списке выберите пункт - назначение платежа. Ваш выбор здесь зависит от Ваших [предпочтений](#bonding-preferences).
+6. Если транзакция пройдёт успешно, Вы должны будете увидеть кнопку `Установить ключ сессии` рядом с ключами "stash" и "controller". Нажмите на неё, вставьте в поле свою `0xa0very0long0hex0string` строку, и затем подтвердить.
+7. Если транзакция пройдёт успешно, Вы должны увидеть вместо нее кнопку `Валидатор`. Нажмите на нее и установите `процент вознаграждения`, число от 0 до 100. Ваш вклад здесь зависит от ваших предпочтений. "Высокое" значение, будет означать что у Вас меньше шансов получить [Номинаторов](#Номинаторов).
 
-Refresh your browser, and select the `Waiting` tab. If your account shows under `intentions`, wait for the next `era`, and you will be moved to the `validators` list (in the `Staking Overview` tab).
+Обновите браузер и выберите вкладку `Ожидание`. Если Ваша учетная запись отображается на вкладке `назначения`, дождитесь следующей `эры`, и Вы будете перемещены в список `валидаторов` (на вкладке `Обзор Стейкинга`).
 
-### Stop Validating
-Unless you want to risk getting slashed, you need to "gracefully" stop validating.
+### Остановки Валидации
+Если Вы не хотите рисковать, чтобы получить штраф, Вам нужно `плавно` остановить валидацию.
 This can be done easily in [Pioneer](testnet.joystream.org/)
 1. Click `Validators` in the sidebar, then choose the `Account actions` tab.
 2. Click the "Stop" button to the right, and confirm.
