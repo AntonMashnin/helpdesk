@@ -1,7 +1,7 @@
 <p align="center"><img src="img/validator_new.svg"></p>
 
 <div align="center">
-  <h4>Это пошаговое руководство по настройке Вашей <a href="https://github.com/Joystream/substrate-node-joystream">полноценной ноды</a>, и приступить к работе в качестве Валидатора в последнем
+  <h4>Это пошаговое руководство по настройке Вашей <a href="https://github.com/Joystream/substrate-node-joystream">полноценной ноды</a>, что позволит Вам приступить к работе в качестве Валидатора в последнем
   <a href="https://testnet.joystream.org/"> Тестнете Joystream</a>.<h4>
 </div>
 
@@ -10,21 +10,21 @@
 Оглавление
 ==
 <!-- TOC START min:1 max:3 link:true asterisk:false update:true -->
-- [Overview](#overview)
-- [Instructions](#instructions)
-- [On Your Machine](#on-your-machine)
+- [Обзор](#обзор)
+- [Инструкции](#инструкции)
+- [На Вашей машине](#на-вашей-машине)
   - [Mac](#mac)
-    - [Setup Node](#setup-node)
-    - [Keys](#keys)
-    - [Final Step](#final-step)
+    - [Настройка ноды](#настройка-ноды)
+    - [Ключи](#ключи)
+    - [Заключительный этап](#заключительный-этап)
   - [Linux](#linux)
-    - [Setup Node](#setup-node-1)
-    - [Keys](#keys-1)
-    - [Final Step](#final-step-1)
-- [In the Pioneer app (browser)](#in-the-pioneer-app-browser)
-  - [Validator Setup](#validator-setup)
-    - [Generate your keys](#generate-your-keys)
-    - [Configure your validator keys](#configure-your-validator-keys)
+    - [Настройка ноды](#настройка-ноды-1)
+    - [Ключи](#ключи-1)
+    - [Заключительный этап](#заключительный-этап-1)
+- [В приложении Pioneer (браузер)](#в-приложении-pioneer-браузер)
+  - [Настройка валидатора](#настройка-валидатора)
+    - [Создайте свои ключи](#создайте-свои-ключи)
+    - [Настройте ключи валидатора](#настройте-ключи-валидатора)
     - [Stop Validating](#stop-validating)
 - [Advanced](#advanced)
   - [Run as a service](#run-as-a-service)
@@ -60,55 +60,55 @@
 <!-- TOC END -->
 
 
-# Overview
+# Обзор
 
-This page contains all information on how to setup your node and becoming a `Validator` on the Joystream Testnets. It will be updated for improvements, and when something changes for new testnets.
+Эта страница содержит всю информацию о том, как настроить свою ноду и стать `Валидатором` в тестовой сети Joystream. Данное руководство будет обновляться с целью улучшения содержания или когда будут измения в новых релизах тестовой сети.
 
-If you want to earn more `tJOY` tokens, but for some reason can't or won't become a `Validator`, you can [`Nominate`](#nominating) instead.
+Если Вы хотите заработать больше токенов `tJOY`, но по какой-то причине не можете или не хотите стать `Валидатором`, Вы можете вместо этого [`Номинировать`](#номинация).
 
-# Instructions
+# Инструкции
 
-The instructions below cover Mac and Linux (64 bit and armv7). Windows binaries are currently not available.
+Приведенные ниже инструкции относятся к Mac и Linux (64-разрядная версия и armv7) платформе. Двоичные файлы для операционной системы Windows в настоящее время недоступны.
 
-**Note**
-If you are just running a node, and don't want to be a `Validator`, you can skip the flags
-`--pruning archive` and `--validator`
+**Примечание**
+Если Вы просто запускаете ноду и не хотите быть `Валидатором`, Вы можете не использовать флаги
+`--pruning archive` и `--validator`
 
 
-# On Your Machine
+# На Вашей машине
 
 ---
 
 ## Mac
 
-* Every time something is written in `<brackets>`, it means you have to replace this with your input, without the `<>`.
-* When something is written in `"double_quotes"`, it means the number/data will vary depending on your node or the current state of the blockchain.
-* For terminal commands, `$` means you must type what comes afterwards. `#` Means it's just a comment/explanation, and must not be typed.
+* Каждый раз, когда что-то написано в `<скобках>`, это означает, что вы должны заменить данный блок своими значениями без `<>`.
+* Когда что-то написано в `"двойных_кавычках"`, это означает, что количество/данные будут варьироваться в зависимости от Вашего узла или текущего состояния блокчейна.
+* Для команд в командной строке, `$` означает, что Вы должны ввести команду, после данного символа. `#` Говорит о том, что это просто комментарий/некое описание, и его нельзя вводить.
 ```
-# This is just a comment, don't type or paste it in your terminal!
+# Это просто комментарий, не вводите и не вставляйте его в командную строку!
 $ cd ~/
-# Only type/paste the "cd ~/, not the preceding $ !
+# Введите/вставьте только "cd ~ /", символ $ копировать не нужно!
 ```
-### Setup Node
+### Настройка ноды
 
-Open the terminal (Applications->Utilities):
+Откройте командную строку (Приложения->Утилиты):
 
 ```
 $ cd ~/
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testnet-4.json
 ----
-# If you don't have wget installed, paste the link in your browser save.
-# Assuming it gets saved in your ~/Downloads folder:
+# Если у Вас не установлен wget, скопируйте ссылку и загрузите файл через браузер.
+# Проположительно, что он будет сохранён в папке ~/Downloads:
 $ mv ~/Downloads/joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz ~/
 ---
 $ tar -vxf joystream-node-3.3.0-fdb75f5ec-x86_64-macos.tar.gz
 $ ./joystream-node --chain joy-testnet-4.json --pruning archive --validator
 ```
-- If you want your node to have a non-random identifier, add the flag `--name <nodename>`
-- If you want to get a more verbose log output, add the flag `<nodename> --log runtime`
+- Если Вы хотите, чтобы Ваш узел имел неслучайный идентификатор, добавьте флаг `--name <nodename>`
+- Если Вы хотите получить более подробный вывод журнала событий, добавьте флаг `<имя узла> --log runtime`
 
-Your node should now start syncing the blockchain. The output should look like this:
+Теперь Ваш узел должен начать блокчейн синхронизацию. Результат должен выглядеть так:
 ```
 Joystream Node
   version "Version"-"your_OS"
@@ -129,36 +129,36 @@ New epoch 0 launching at block ...
 ...
 Syncing, target=#"block_height" ("n" peers), best: #"synced_height" ("hash_of_synced_tip"), finalized #0 ("hash_of_finalized_tip"), ⬇ "download_speed"kiB/s ⬆ "upload_speed"kiB/s
 ```
-From the last line, notice `target=#"block_height"` and `best: #"synced_height"`
-When the `target=#block_height`is the same as `best: #"synced_height"`, your node is fully synced!
+Обратите внимание на последнюю строку `target=#"block_height"` и `best: #"synced_height"`
+где `target=#block_height`имеет тоже самое значение что и `best: #"synced_height"`, это значит Ваш узел полностью синхронизирован!
 
-**Keep the terminal window open.**
+**Не закрывайте консоль.**
 
-### Keys
+### Ключи
 
-Now you need to generate your keys. Go [here](#generate-your-keys) to do that now.
+Теперь Вам нужно сгенерировать свои ключи. Перейдите [сюда](#создайте-свои-ключи)
 
-### Final Step
+### Заключительный этап
 
-Now it's time to configure your keys to start validating. Go [here](#configure-your-validator-keys) to configure your `Validator`.
+Пришло время настроить ключи, чтобы начать валидацию. Перейдите [сюда](#configure-your-validator-keys) для настройки вашего `Валидатора`.
 
 ---
 
 ## Linux
 
-* Every time something is written in `<brackets>`, this means you have to replace this with your input, without the `<>`.
-* When something is written in `"double_quotes"`, it means the number/data will vary depending on your node or the current state of the blockchain.
-* For terminal commands:
-  * `$` means you must type what comes afterwards
-  * `#` Means it's just a comment/explanation for the readers convenience
+* Каждый раз, когда что-то написано `<скобках>`, это означает, что вы должны заменить данный блок своими значениями без `<>`.
+* Когда что-то написано в `"двойных_кавычках"`, это означает, что количество/данные будут варьироваться в зависимости от Вашего узла или текущего состояния блокчейна.
+* Для команд в командной строке:
+  * `$` означает, что Вы должны ввести команду, после данного символа
+  * `#` Говорит о том, что это просто комментарий/некое описание, и его нельзя вводить.
 ```
-# This is just a comment, don't type or paste it in your terminal!
+# Это просто комментарий, не вводите и не вставляйте его в командную строку!
 $ cd ~/
-# Only type/paste the "cd ~/, not the preceding $ !
+# Введите/вставьте только "cd ~ /", символ $ копировать не нужно!
 ```
-### Setup Node
+### Установка ноды
 
-Open the terminal:
+Откройте командную строку:
 
 ```
 $ cd ~/
@@ -168,14 +168,14 @@ $ tar -vxf joystream-node-3.3.0-fdb75f5ec-x86_64-linux-gnu.tar.gz
 # armv7 (eg. raspberry pi)
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joystream-node-3.3.1-arm-v7.tar.gz
 $ tar -vxf joystream-node-3.3.1-arm-v7.tar.gz
-# For both
+# Для обеих
 $ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testnet-4.json
 $ $ ./joystream-node --chain joy-testnet-4.json --pruning archive --validator
 ```
-- If you want your node to have a non-random identifier, add the flag `--name <nodename>`
-- If you want to get a more verbose log output, add the flag `<nodename> --log runtime`
+- Если Вы хотите, чтобы Ваш узел имел неслучайный идентификатор, добавьте флаг `--name <nodename>`
+- Если Вы хотите получить более подробный вывод журнала событий, добавьте флаг `<имя узла> --log runtime`
 
-Your node should now start syncing the blockchain. The output should look like this:
+Теперь Ваш узел должен начать блокчейн синхронизацию. Результат должен выглядеть так:
 ```
 Joystream Node
   version "Version"-"your_OS"
@@ -196,69 +196,69 @@ New epoch 0 launching at block ...
 ...
 Syncing, target=#"block_height" ("n" peers), best: #"synced_height" ("hash_of_synced_tip"), finalized #0 ("hash_of_finalized_tip"), ⬇ "download_speed"kiB/s ⬆ "upload_speed"kiB/s
 ```
-From the last line, notice `target=#"block_height"` and `best: #"synced_height"`
-When the `target=#block_height`is the same as `best: #"synced_height"`, your node is fully synced!
+Обратите внимание на последнюю строку `target=#"block_height"` и `best: #"synced_height"`
+где `target=#block_height`имеет тоже самое значение что и `best: #"synced_height"`, это значит Ваш узел полностью синхронизирован!
 
-**Keep the terminal window open.**
+**Не закрывайте консоль.**
 
-### Keys
+### Ключи
 
-Now you need to generate your keys. Go [here](#generate-your-keys) to do that now.
+Теперь Вам нужно сгенерировать свои ключи. Перейдите [сюда](#создайте-свои-ключи)
 
-### Final Step
+### Заключительный этап
 
-Now it's time to configure your keys to start validating. Go [here](#configure-your-validator-keys) to configure your `Validator`.
+Пришло время настроить ключи, чтобы начать валидацию. Перейдите [сюда](#configure-your-validator-keys) для настройки вашего `Валидатора`.
 
 ---
 
-# In the Pioneer app (browser)
+# В приложении Pioneer (браузер)
 
-## Validator Setup
+## Настройка валидатора
 
-### Generate your keys
+### Создайте свои ключи
 
-While the node is syncing, you can start the process of setting up the rest.
+Пока узел синхронизируется, Вы можете начать процесс настройки остальных компонентов.
 
-1. Go to the [Pioneer App](https://testnet.joystream.org/), and select `My Keys` in the sidebar. Click the `Add account` button.
+1. Перейдите в [Приложение Pioneer](https://testnet.joystream.org/), и выбирете `Мои ключи` на боковой панели. Нажмите кнопку `Добавить аккаунт`.
 
-Names are entirely optional, but the next steps will be easier if you follow the system suggested.
+Имена не обязательны, но следующие шаги будут проще, если Вы будете следовать предложенной системе.
 
-2. For ease of use, name your first keypair "stash", or at least something that contains the word.
+2. Для простоты использования, назовите свою первую пару ключей "stash", или хотя бы что-то, что содержит слово.
 
-If you want to be able to recover your keys later, write down your mnemonic seed, key pair crypto type and secret derivation path.
+Если в будущем Вы хотите иметь возможность восстановить свои ключи, запишите свою мнемоник фразу, тип криптопары ключей и порядок слов.
 
-3. Depending on your browser, you might have to confirm saving the json file.
+3. В зависимости от Вашего браузера Вам может потребоваться подтвердить сохранение json файла.
 
-4. Repeat the process for your "controller" key.
+4. Повторите процесс для Вашего "controller" ключа.
 
-You should now have two sets of keys, namely:
-- the "stash" key that will stake your funds
-- the "controller" key that you will use to operate your validator
+Теперь у Вас должно быть два набора ключей, а именно:
+- ключ "stash", который будет учавствовать с тейкинге ваших средств
+- ключ "controller", который Вы будете использовать для работы с Вашей учётной записью валидатора
 
-5. If you already have tokens, transfer the bulk to your "stash" account. If you don't yet have any tokens, ask in the [Discord chat](https://discord.gg/DE9UN3YpRP), and you shall receive :)
+5. Если у Вас уже есть токены, переведите их основную часть на свой "stash" аккаунт. Если у Вас еще нет монет на счету, запросите их в [Discord чате](https://discord.gg/DE9UN3YpRP), чтобы получить их :)
 
-6. Send at least 1 token to your "controller".
+6. Отправьте хотя бы 1 токен на свой аккаунт "controller"
 
-### Configure your validator keys
+### Настройте ключи валидатора
 
-In order to be a `Validator`, you need to stake. Note that you may have to refresh your browser if you're not seeing the options right away.
+Чтобы стать `Валидатором`, Вам нужно выполнить стейкинг Ваших токенов. Обратите внимание, что Вам, возможно, придется обновить браузер, если Вы не видите параметры сразу.
 
-**IMPORTANT:** Read step 6. carefully. Your node needs to be fully synced, before proceeding to step 7.
-1. In a terminal window on the machine/VPS your node is running, paste the following:
+**ВАЖНО:** Внимательно прочтите шаг 6. Перед переходом к шагу 7 ваш узел должен быть полностью синхронизирован.
+1. В командной строке Вашей машины/VPS, на котором запущена нода, вставьте следующую строку:
 ```
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 ```
-If your node is running, this should return:
+Если Ваша нода запущена, то команда должна вернуть следующий вывод:
 ```
 {"jsonrpc":"2.0","result":"0xa0very0long0hex0string","id":1}
 ```
 
-This will save the session keys to your node. Make sure you don't close the window before copying the `0xa0very0long0hex0string` somewhere.
+Это сохранит ключи сеанса на вашем узле. Убедитесь, что Вы не закрыли окно перед копированием строки `0xa0very0long0hex0string`.
 
-If your node is not running, is running on a different port, or `curl` is not installed, it will return something like:
+Если Ваш нода не запущена, работает на другом порту, или не установлена `curl` утилита, Вам будет возвращён следующий вывод:
 ```
 curl: (7) Failed to connect to localhost port 9933: Connection refused
-# or
+# или
 {"jsonrpc":"2.0","error":{"code":-32601,"message":"Method not found"},"id":1}
 ```
 
